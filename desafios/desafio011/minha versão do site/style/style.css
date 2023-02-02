@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background-color: black;
+    height: 160px;
+}
+
+header > h1 {
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 70px;
+    font-weight: bold;
+}
+
+header > p {
+    color: white;
+    text-align: center;
+}
+
+main p {
+    font-size: 32px;
+    line-height: 50px;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    padding-left: 20px;
+}
+
+#flor {
+    background-image: url(imagens/background001.jpg);
+    background-size: cover;
+    color: white;
+}
+
+#carta {
+    background-image: url(imagens/background002.jpg);
+    background-size: cover;
+    color: white;
+}
+
+.fundo {
+    background-color: rgba(0, 0, 0, 0.42);
+    max-width: 400px;
+    padding-top: 20px;
+}
