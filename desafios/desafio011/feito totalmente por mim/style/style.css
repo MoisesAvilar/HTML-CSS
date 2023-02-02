@@ -1,13 +1,32 @@
 @charset "UTF-8";
 
+
+@font-face {
+    font-family: 'Cordel';
+    src: url(fontes/TT\ Masters\ Rough\ Bold.otf) format('opentype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Signika';
+    src: url(fontes/Signika-VariableFont_wght.ttf) format('truetype');
+    font-weight: normal;
+}
+
+:root {
+    --fonte-cabeçalho: 'Signika', sans-serif
+    --fonte-texto: 'Cordel', Arial, Helvetica, Verdana, sans-serif;
+}
+
 * {
     margin: 0px;
     padding: 0px;
 }
 
 header {
+    font-family: var(--fonte-cabeçalho);
     background-color: black;
-    height: 160px;
+    height: 190px;
 }
 
 header > h1 {
@@ -21,24 +40,27 @@ header > h1 {
 header > p {
     color: white;
     text-align: center;
+    margin-top: 10px;
 }
 
 main {
+    font-family: var(--fonte-texto);
     border: 3px solid black;
 }
 
 main p {
+    font-family: var(--fonte-texto);
     font-size: 32px;
     line-height: 50px;
     margin-top: 200px;
     margin-bottom: 200px;
     padding-left: 20px;
     font-style: italic;
-    font-weight: 600;
+    font-weight: bold;
 }
 
 #flor {
-    background-image: url(imagens/background001.jpg);
+    background: black url(imagens/background001.jpg) center no-repeat fixed;
     background-size: cover;
     color: white;
     height: 100vh;
@@ -46,7 +68,7 @@ main p {
 }
 
 #carta {
-    background-image: url(imagens/background002.jpg);
+    background: black url(imagens/background002.jpg) center no-repeat fixed;
     background-size: cover;
     color: white;
     height: 100vh;
@@ -54,7 +76,7 @@ main p {
 }
 
 .fundo {
-    background-color: rgba(0, 0, 0, 0.445);
+    background: rgba(0, 0, 0, 0.445);
     max-width: 370px;
     padding: 20px;
     position: absolute;
