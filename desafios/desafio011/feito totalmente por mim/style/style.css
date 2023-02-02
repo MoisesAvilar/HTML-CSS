@@ -23,28 +23,46 @@ header > p {
     text-align: center;
 }
 
+main {
+    border: 3px solid black;
+}
+
 main p {
     font-size: 32px;
     line-height: 50px;
     margin-top: 200px;
     margin-bottom: 200px;
     padding-left: 20px;
+    font-style: italic;
+    font-weight: 600;
 }
 
 #flor {
     background-image: url(imagens/background001.jpg);
     background-size: cover;
     color: white;
+    height: 100vh;
+    position: relative;
 }
 
 #carta {
     background-image: url(imagens/background002.jpg);
     background-size: cover;
     color: white;
+    height: 100vh;
+    position: relative;
 }
 
 .fundo {
-    background-color: rgba(0, 0, 0, 0.42);
-    max-width: 400px;
-    padding-top: 20px;
+    background-color: rgba(0, 0, 0, 0.445);
+    max-width: 370px;
+    padding: 20px;
+    position: absolute;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 8px;
+    text-align: center;
 }
