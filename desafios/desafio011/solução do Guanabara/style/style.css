@@ -13,6 +13,7 @@ header {
 
 header h1 {
     font-variant: small-caps;
+    font-size: 10vw;
 }
 
 header p {
@@ -22,11 +23,16 @@ header p {
     padding-bottom: 20px;
 }
 
-section p {
+section {
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-size: 4.5vw;
+}
+
+section p {
+    padding-bottom: 2em;
 }
 
 .normal {
@@ -35,13 +41,30 @@ section p {
 }
 
 .imagem {
-    background-color: rgb(43, 43, 43);
+    background-color: rgba(43, 43, 43, 0.656);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px black;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .imagem > p {
-    background-color: rgb(65, 65, 65);
-    width: 400px;
+    background-color: rgba(65, 65, 65, 0.626);
+    display: inline-block;
+    padding: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.606);
+    border-radius: 10px;
+}
+
+#img01 {
+    background-image: url(imagens/background001.jpg
+    );
+    background-position: right center;
+}
+
+#img02 {
+    background-image: url(imagens/background002.jpg);
+    background-position: right center;
 }
 
 body a {
