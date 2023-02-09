@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organizando Tabelas Grandes</title>
+    <style>
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        thead {
+            background-color: gray;
+            color: white;
+        }
+
+        tfoot {
+            background-color: gray;
+            color: white;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        td {
+            text-align: left;
+        }
+
+        .dado {
+            text-align: right;
+        }
+
+        .texto {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+                <th>Sexo</th>
+                <th>Estado Civil</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Moisés</td>
+                <td class="dado">23</td>
+                <td class="texto">Masculino</td>
+                <td class="texto">Casado</td>
+            </tr>
+            <tr>
+                <td>Naty</td>
+                <td class="dado">21</td>
+                <td class="texto">Feminino</td>
+                <td class="texto">Casada</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Soma das Idades</th>
+                <td class="dado">44 anos</td>
+                <td class="texto">1 homem, 1 mulher</td>
+                <td>Ambos casados</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
