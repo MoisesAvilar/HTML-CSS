@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio de Tabelas</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 600px;
+        }
+
+        td, th {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <caption>Filmes Favoritos</caption>
+            <th scope="col">Grupos</th>
+            <th scope="col">Nomes</th>
+            <th colspan="3" scope="colgroup">Filmes</th>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Homens</th>
+                <td>Moisés Avilar</td>
+                <td>Dark</td>
+                <td>American Pie</td>
+                <td>Flash</td>
+            </tr>
+            <tr>
+                <td>Biel Delas</td>
+                <td>O Estagiário</td>
+                <td>A Vida é Top</td>
+                <td>Há uma saída</td>
+            </tr>
+            <tr>
+                <td>Nathan Alves</td>
+                <td>O Escuro</td>
+                <td>Jogos Mortais</td>
+                <td>Psicológico 2???</td>
+            </tr>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Mulheres</th>
+                <td>Natália</td>
+                <td>Carrossel</td>
+                <td>Madonna</td>
+                <td>Rebelde</td>
+            </tr>
+            <tr>
+                <td>Cida</td>
+                <td>The Walking Dead</td>
+                <td>Você</td>
+                <td>Problemas</td>
+            </tr>
+            <tr>
+                <td>Angela</td>
+                <td>Homem-Aranha</td>
+                <td>Geladeira</td>
+                <td>Feminino 2</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
